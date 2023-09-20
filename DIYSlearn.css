@@ -98,8 +98,9 @@ body {
 .content {
   background-color: transparent;
   margin-top: 90px;
-  margin-left: 20%;
-  max-width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 1000%;
   text-align: justify;
   position: center;
 }
