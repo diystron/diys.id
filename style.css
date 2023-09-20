@@ -98,10 +98,11 @@ body {
 .content {
   background-color: transparent;
   margin-top: 90px;
-  margin-left: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
   max-width: 60%;
-  text-align: left;
-  position: center;
+  text-align: justify;
+  position:center;
 }
 
 .tanggal-post{
