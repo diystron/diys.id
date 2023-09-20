@@ -36,22 +36,92 @@
         <h1 class="judul-post"> Penguat Operasional</h1>
         <div class="paragraf-post">
             <p><b>Pengertian Op-Amp (Operational Amplifier)</b></p>
-            <br>
             <p style="text-indent: 0.5in;">
                 Operational Amplifier atau lebih dikenal dengan istilah Op-Amp adalah salah satu dari bentuk IC Linear
                 yang berfungsi sebagai Penguat Sinyal listrik. Sebuah Op-Amp terdiri dari beberapa Transistor, Dioda,
                 Resistor dan Kapasitor yang terkoneksi dan terintegrasi sehingga memungkinkannya untuk menghasilkan Gain
                 (penguatan) yang tinggi pada rentang frekuensi yang luas.
             </p>
-            <br>
             <p style="text-indent: 0.5in;">
                 Op-Amp sering disebut juga dengan Penguat Operasional. Secara ideal Op-Amp memiliki impedansi masukan
                 dan penguatan yang tak berhingga serta impedansi keluaran sama dengan nol. Dalam prakteknya, Op-Amp
                 memiliki impedansi masukan dan penguatan yang besar serta impedansi keluaran yang kecil. Op-amp memiliki
-                simbol seperti yang terlihat pada gambar 1.
+                simbol seperti yang terlihat pada gambar.
             </p>
-            <img src="images/Simbol_OpAmp.png"
-                style="width: 200px; height: 200px;"/>
+            <img style="margin-left: 20%;" src="images/Simbol_OpAmp.png" />
+            <p>
+                Secara garis besar, terdapat 4 pin utama dari Op-Amp, yaitu masukan inverting (tanda
+                minus), masukan non-inverting (tanda plus), masukan tegangan positif, masukan tegangan
+                negatif dan pin keluaran. Di samping pin tersebut terdapat satu pin untuk adjustment.
+            </p>
+            <br>
+            <p><b>Karakteristik Op-Amp (Operational Amplifier)</b></p>
+            <p style="text-indent: 0.5in;">
+                Karakteristik Faktor Penguat atau Gain pada Op-Amp pada umumnya ditentukan oleh
+                Resistor Eksternal yang terhubung diantara Output dan Input pembalik (Inverting Input).
+                Konfigurasi dengan umpan balik negative ini biasanya disebut dengan Closed Loop
+                configuration atau Konfigurasi Lingkar Tertutup. Umpan balik negatif ini akan menyebabkan
+                penguatan atau gain menjadi berkurang dan menghasilkan penguatan yang dapat diukur serta
+                dapat dikendalikan. Tujuan pengurangan Gain dari Op-Amp ini adalah untuk menghindari
+                terjadinya Noise yang berlebihan dan juga untuk menghindari respon yang tidak diinginkan.
+                Sedangkan pada Konfigurasi Lingkar Terbuka atau Open-Loop Configuration, besar
+                penguatannya adalah tak terhingga (∞) sehingga besarnya tegangan output hampir atau
+                mendekati tegangan Vcc.
+            </p>
+            <img style="margin-left: 20%;" src="images/Op-amp Open dan CloseLoop.png" />
+            <p>
+                Secara umum, Operational Amplifier (Op-Amp) yang ideal memiliki karakteristik sebagai
+                berikut :
+            <div style="margin-left: 20px;">
+                <li>Tegangan Open-loop atau Av = ∞ (tak terhingga)</li>
+                <li>Tegangan Offset Keluaran (Output Offset Voltage) atau Voo = 0 (nol)</li>
+                <li>Impedansi Masukan (Input Impedance) atau Zin= ∞ (tak terhingga)</li>
+                <li>Impedansi Output (Output Impedance ) atau Zout = 0 (nol)</li>
+                <li>Lebar Pita (Bandwidth) atau BW = ∞ (tak terhingga)</li>
+                <li>Karakteristik tidak berubah dengan suhu</li>
+            </div>
+            </p>
+            <br>
+            <p>Beberapa penerapan Op-Amp diantaranya adalah:</p>
+            <br>
+            <p><b>1. Penguat Inverting</b></p>
+            <p>Rangkaian untuk penguat inverting adalah seperti yang ditunjukkan gambar.</p>
+            <img style="margin-left: 20%;" src="images/Op-amp Rangkaian Penguat Inverting.png" />
+            <p>
+                Penguat ini memiliki ciri khusus yaitu sinyal keluaran memiliki beda fasa sebesar 180◦. Pada
+                rangkaian penguat yang ideal memiliki syarat bahwa tegangan masukan sama dengan 0 dan
+                impedansi masukan tak terhingga. Sehingga dari rangkaian tersebut dapat diperoleh rumus
+                penguat adalah sebagai berikut :
+            </p>
+            <img style="margin-left: 20%;" src="images/Op-amp Rumus Penguat Inverting.png" />
+            <p>
+                Tanda (-) negatif menunjukkan terjadi pembalikan pada keluarannya atau memiliki beda
+                fasa sebesar 180 derejat dengan masukannya.
+            </p>
+            <br>
+            <p><b>2. Penguat Non Inverting</b></p>
+            <p>Rangkaian untuk penguat non-inverting adalah seperti yang ditunjukkan gambar dibawah.</p>
+            <img style="margin-left: 20%;" src="images/Op-amp Rangkaian Penguat Non Inverting.png" />
+            <p>
+                Penguat tersebut dinamakan penguat non-inverting karena masukan dari penguat tersebut
+                adalah masukan non-inverting dari Op Amp. Tidak seperti penguat inverting, sinyal
+                keluaran penguat jenis ini sefasa dengan sinyal masukannya. Seperti pada rangkaian
+                penguat inverting syarat ideal sebuah penguat adalah tegangan masukan sama dengan 0
+                dan impedansi masukan tak terhingga. sehingga dari rangkaian tersebut dapat diperoleh
+                rumus penguat adalah sebagai berikut :
+            </p>
+            <img style="margin-left: 20%;" src="images/Op-amp Rumus Penguat Non Inverting.png" />
+            <p>
+                Rangkaian penguat inverting maupun non-inverting biasanya menggunakan IC Op-Amp
+                741. Dengan memahami prinsip kerja dari rangkaian ini, maka rangkaian pengembangan
+                dari rangakaian Op-Amp ini seperti rangkaian ADC (Analog to Digital Converter), DAC
+                (Digital to Analog Converter), Summing (penjumlahan) dan yang lainnya juga dapat
+                dipahami
+            </p>
+            <br>
+            <p>Download Materi <a href="filePDF/Materi Bahan Ajar_PRE_Elin_Penguat Operasional.pdf" target="_blank">Penguat Operasional.pdf </a></p>
+
+
 
         </div>
 
