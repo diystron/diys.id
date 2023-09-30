@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link>
+    <link>
+    <title>diys.id/Penguat-Diferensial</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">diys</div>
+                <div class="lastname">tech</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html" class="#">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="catalog.html">catalog</a></li>
+                <li><a href="DIYSlearn.html">DIYS learn</a></li>
+                <li><img src="images/diys.png" alt="..." /></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- NAVBAR END -->
+    <!-- CONTENT -->
+    <div class="content">
+        <h3 class="tanggal-post"> Sebtember 2023</h3>
+        <h1 class="judul-post"> Encoder dan Decoder</h1>
+        <div class="paragraf-post">
+            <p><b>1. ENCODER</b></p>
+            <p style="text-indent: 0.5in;">
+                Encoder merupakan rangkaian logika yang berfungsi mengubah data yang di inputkan menjadi kode-kode biner
+                pada outputnya. Sebuah encoder menerima input N-bit pada N jalur input, tetapi hanya 1 saluran yang
+                menentukan kode output dan menghasilkan kode biner saluran output.
+            </p>
+            <p style="text-indent: 0.5in;">
+                Encoder ada beberapa macam diantaranya adalah encoder octal ke biner atau sering di sebut encoder 8 ke
+                3, yang berfungsi mengubah data bilangan octal pada inputnya menjadi kode biner 3-bit pada outputnya.
+                Simbol dari encoder octal ke biner dapat dilihat pada gambar
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Encoder Octal Binner.jpg" width="#"
+                height="#" />
+            <br>
+            <p style="text-indent: 0.5in;">
+                Sedangkan bentuk kemasan Integrated Circuit (IC) jenis TTL encoder prioritas octal ke biner ini
+                disediakan oleh seri 74 LS 148. Gambar 2.9 menunjukkan spesifikasi PIN untuk IC tersebut. Pada gambar,
+                terlihat bahwa IC tersebut memiliki keadaan aktif low baik input maupun output nya. Spesifikasi pin dari
+                IC 74 LS 148 dapat dilihat pada gambar
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Spesifikasi Pin IC 74LS148.jpg" width="450px"
+                height="250px" />
+            <br>
+            <p style="text-indent: 0.5in;">
+                Pada dasarnya sebuah encoder octal ke biner (encoder 8 saluran ke 3 saluran) menerima 8 saluran masukan
+                dan menghasilkan kode keluaran 3-bit sesuai dengan masukan yang diberikan. Dalam praktek, pemberian
+                masukan encoder dilakukan dengan memasang sakelar sedangkan untuk keluarannya mengggunakan 3 buah Led.
+                Gambar 3 spesifikasi pin IC 74 LS 148 dengan masukan aktif Low.
+            </p>
+            <br>
+            <p><b>2. DECODER</b></p>
+            <p style="text-indent: 0.5in;">
+                Decoder adalah rangkaian logika yang mengubah masuka kode biner N-bit ke M saluran keluaran sedemikian
+                rupa sehingga setiap saluran keluaran hanya satu yang akan diaktifkan dari beberapa kemungkinan
+                kombinasi masukan. Fungsi utama dari decoder adalah mengkodekan ulang atau menafsirkan kode-kode biner
+                yang ada pada N masukaanya menjadi data asli pada M keluarannya. Setiap N masukan dapat berisi 0 atau 1,
+                ada 2N kemungkinan kombinasi dari masukan atau kode-kode. Untuk setiap kombinasi masukan ini hanya 1
+                dari M (N adalah bilangan bulat dan M adalah bilangan bulat yang lebih kecil atau samadengan 2N )
+                keluaran yang aktif ( High ), sedangkan keluaran yang lain adalah Low. Beberapa decoder didesain untuk
+                menghasilkan keluaran Low pada keadaan aktif, dimana hanya keluaran yang dipilih adalah Low sementara
+                keluaran yang lain adalah High. Decoder jenis ini dapat dikenali dari digram decoder tersebut, yaitu
+                dengan adanya lingkaran kecil pada saluran keluaran dari decoder tersebut.
+            </p>
+            <br>
+            <p style="margin-left: 0.3in;">Decoder ada beberapa macam, antara lain :</p>
+            <p style="margin-left: 0.3in;"><b>a. DECODER 2 KE 4</b></p>
+            <p style="margin-left: 0.5in;">
+                Decoder 2 ke 4 ini berfungsi menafsirkan kode-kode biner2-bit. Dalam hal ini, jika demultiplexer akan
+                difungsikan sebagai decoder, maka input demultiplexer menjadi input enable decoder, dan pemilih
+                demultiplexer menjadi input decoder. Gambar berikut merupakan simbol dari demultiplexer dan decoder .
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/DEMUX 1 KE 4 dan DECODER 2 KE 4.jpg" width="#"
+                height="#" />
+            <br>
+            <p style="margin-left: 0.5in;">
+                Dalam kemasan IC TTL, decoder 2 ke 4 disediakan oleh seri 74 LS 139 yang juga menyediakan fungsi DEMUX 1
+                ke 4. Pada umumnya input-input decoder dalam kemasan IC berjenis active-high, sedangkan outputnya
+                bervariasi di antara active-high dan active-low. Spesifikasi pin IC 74 LS 139 dapat dilihat pada gambar
+                berikut.
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Spesifikasi Pin IC 74LS139.png" width="#"
+                height="#" />
+            <br>
+            <p style="margin-left: 0.3in;"><b>b. Decoder Biner ke Octal ( Decoder 3 ke 8 )</b></p>
+            <p style="margin-left: 0.5in;">
+                Beberapa decoder mempunyai satu atau lebih masukan enable yang digunakan untuk mengatur operasi dari
+                decoder tersebut. Decoder ini dapat disebut juga decoder 3 ke 8 saluran, karena decoder ini memiliki 3
+                saluran masukan dan 8 saluran keluaran. Decoder ini dapat disebut juga decoder biner ke octal, atau
+                converter, karena decoder ini mengambil 3-bit biner dari kode masukan dan mengaktifkan 1 dari 8 (octal)
+                keluaran bersesuaian dengan kode tersebut. Decoder ini juga menunjukkan sebuah decoder 1 ke 8, karena
+                hanya 1 dari 8 keluaran yang aktif. Simbol dari decoder biner ke octal dapat dilihat pada gambar
+                berikut.
+            </p>
+            <br>
+            <img style="margin-left: 20%;"
+                src="images/05-EncoderDecoder/Simbol Decoder Binner ke Octal (Decoder 3 bit).png" width="#"
+                height="#" />
+            <br>
+            <p style="margin-left: 0.5in; text-indent: 0.5in;">
+                Rangkaian decoder biner ke octal atau decoder 3 ke 8 dalam kemasan IC disediakan oleh IC 74 LS 138
+                dengan
+                spesifikasi pin seperti ditunjukkan pada gambar dibawah.
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Spesifikasi Pin IC 74LS138.png" width="#"
+                height="#" />
+            <br>
+            <p><b>3. KOMPARATOR</b></p>
+            <p style="text-indent: 0.5in;">
+                Komparator berfugsi membandingkan satu data dengan data yang lainnya. Didalam rangkaian digital
+                komparator dapat diartikan membandingkan antara dua input. Jenis dari komparator biner ada 2 macam yaitu
+                non equality comparator dan equality comparator. Pada alat ini menggunakan jenis komparator non equality
+                comparator. Non equality comparator adalah rangkaian logika yang memberikan keadaan output tinggi jika
+                keadaan dari kedua input berbeda. Untai pembanding jenis ini juga sering disebut komparator keluaran
+                aktif rendah. Simbol dari komparator (pembanding 8-bit)dapat dilihat pada gambar.
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Simbol Comparator (pembanding 8 bit).jpg"
+                width="#" height="#" />
+            <br>
+            <p style="text-indent: 0.5in;">
+                Bentuk kemasan Integrated Circuit (IC) jenis TTL encoder prioritas octal ke biner ini disediakan oleh
+                seri 74 LS 688. Spesifikasi pin dari IC 74 LS 688 dapat dilihat pada gambar
+            </p>
+            <br>
+            <img style="margin-left: 20%;" src="images/05-EncoderDecoder/Spesifikasi Pin IC74LS688.png"
+                width="#" height="#" />
+            <br>
+        </div>
+
+    </div>
+    <!-- CONTENT -->
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <!-- FOOTER KIRI -->
+        <div class="footer-left">
+            <h3>For mobile, please use Desktop Mode!</h3>
+            <div class="credit-card">
+                <img src="images/visa.png" alt="" />
+                <img src="images/mastercard.png" alt="" />
+                <img src="images/paypal.png" alt="" />
+            </div>
+            <p class="footer-copyright">@2023 diys</p>
+        </div>
+        <!-- FOOTER TENGAH -->
+        <div class="footer-center">
+            <div>
+                <i class='bx bxs-map'></i>
+                <p>Indonesia, Yogyakarta</p>
+            </div>
+
+            <div>
+                <i class='bx bxs-phone'></i>
+                <p>+6200-0000-0000</p>
+            </div>
+
+            <div>
+                <i class='bx bxs-envelope'></i>
+                <p><a href="#">support@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <!-- FOOTER KANAN -->
+        <div class="footer-right">
+            <p class="footer-about">
+                "You need great passion, because everything you do with great pleasure, you do well."
+                <span>-Juan Manuel Fangio</span>
+            </p>
+
+            <div class="footer-media">
+                <p>Visid Us:</p>
+                <a href="https://github.com/diystron" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com/@diystron_" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.instagram.com/diystron/" target="_blank"><i
+                        class='bx bxl-instagram-alt'></i></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- FOOTER END -->
+
+</body>
+
+</html>
